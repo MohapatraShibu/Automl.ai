@@ -59,9 +59,17 @@ if nav_choice == 'ML_Modelling':
     if st.button('Train Model'):
         if model_type == 'Classification':
             model_list = cm.get_model(df,target) #[ml experiment settings, model compare results, best model]
+            st.info("This is the ML experiment settings")
+            st.dataframe(model_list[0])
+            st.info("Comparision table of ML models")
+            st.dataframe(model_list[1])
 
         else:
             model_list = rm.get_model(df,target) #[ml experiment settings, model compare results, best model]
+            st.info("This is the ML experiment settings")
+            st.dataframe(model_list[0])
+            st.info("Comparision table of ML models")
+            st.dataframe(model_list[1])
             
         with open('best_model.pkl','rb') as f :
             st.download_button('Download Model',f,'best_model.pkl')
