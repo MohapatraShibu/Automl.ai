@@ -7,5 +7,6 @@ Follow the below steps to xecute the application
 3. pip install -r requirements.txt
 4. streamlit run app.py
 
----
-Application Link: https://mohapatrashibu-automl-ai-app-6z8hpb.streamlit.app/
+# Application Link
+
+https://mohapatrashibu-automl-ai-app-6z8hpb.streamlit.app/
