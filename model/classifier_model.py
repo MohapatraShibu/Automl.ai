@@ -11,12 +11,8 @@ from streamlit_pandas_profiling import st_profile_report
 def get_model(df,target):
     setup(df,target=target)
     setup_df = pull()
-    st.info("ML info")
-    st.dataframe(df)
     best_model = compare_models()
     compare_df = pull()
-    st.info("Comparision table of ML models")
-    st.dataframe(compare_df)
     save_model(best_model,'best_model')
     return([setup_df,compare_df,best_model])
 
