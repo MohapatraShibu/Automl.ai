@@ -9,7 +9,7 @@ import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 def get_model(df,target):
-    setup(df,target=target,silent=True)
+    setup(df,target=target)
     setup_df = pull()
     st.info("ML info")
     st.dataframe(df)
