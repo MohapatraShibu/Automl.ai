@@ -8,4 +8,4 @@ Follow the below steps to xecute the application
 4. streamlit run app.py
 
 ---
-Application Link: 
+Application Link: https://mohapatrashibu-automl-ai-app-6z8hpb.streamlit.app/
